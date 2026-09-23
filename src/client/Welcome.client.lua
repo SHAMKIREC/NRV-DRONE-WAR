@@ -1,0 +1,17 @@
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local gui = Instance.new("ScreenGui")
+gui.Name = "NRVWelcome"
+gui.ResetOnSpawn = false
+gui.Parent = player:WaitForChild("PlayerGui")
+local label = Instance.new("TextLabel")
+label.Name = "Status"
+label.AnchorPoint = Vector2.new(0.5, 0)
+label.Position = UDim2.fromScale(0.5, 0.04)
+label.Size = UDim2.new(0.85, 0, 0, 48)
+label.BackgroundColor3 = Color3.fromRGB(22, 26, 34)
+label.BackgroundTransparency = 0.15
+label.TextColor3 = Color3.fromRGB(255, 255, 255)
+label.TextScaled = true
+label.Text = "NRV DRONE WAR | Prototype: garage and flight coming next"
+label.Parent = gui
